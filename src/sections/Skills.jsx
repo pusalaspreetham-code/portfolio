@@ -7,8 +7,10 @@ const skillCategories = [
     skills: [
       { name: "React", level: 90 },
       { name: "JavaScript (ES6+)", level: 88 },
+      { name: "TypeScript", level: 72 },
       { name: "Tailwind CSS", level: 85 },
       { name: "HTML / CSS", level: 92 },
+      { name: "Next.js", level: 70 },
     ],
   },
   {
@@ -28,7 +30,11 @@ const skillCategories = [
     color: "bg-amber-50 dark:bg-amber-950/30 border-amber-100 dark:border-amber-900/40",
     skills: [
       { name: "Git & GitHub", level: 88 },
+      { name: "Docker", level: 60 },
       { name: "C++", level: 82 },
+      { name: "Linux", level: 72 },
+      { name: "Figma", level: 65 },
+      { name: "AWS (S3, EC2)", level: 58 },
     ],
   },
 ];
