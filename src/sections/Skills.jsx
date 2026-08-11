@@ -2,19 +2,19 @@ import Section from "../components/SectionWrapper";
 
 const skillCategories = [
   {
-    category: "Frontend",
+    category: "Launguages",
     color: "bg-blue-50 dark:bg-blue-950/30 border-blue-100 dark:border-blue-900/40",
-    skills: ["React", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "HTML / CSS", "Next.js"],
+    skills: ["Python", "JavaScript", "C","C++", "SQL"],
   },
   {
-    category: "Backend",
+    category: "Web Development",
     color: "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-100 dark:border-emerald-900/40",
-    skills: ["Node.js", "Express.js", "Python", "MongoDB", "PostgreSQL", "REST APIs"],
+    skills: ["Node.js", "Express.js", "Python","HTML", "CSS", "REST APIs"],
   },
   {
     category: "Tools & Other",
     color: "bg-amber-50 dark:bg-amber-950/30 border-amber-100 dark:border-amber-900/40",
-    skills: ["Git & GitHub", "Docker", "C++", "Linux", "Figma", "AWS (S3, EC2)"],
+    skills: ["Git & GitHub", "PostgreSQL","MYSQL","MongoDB"],
   },
 ];
 
