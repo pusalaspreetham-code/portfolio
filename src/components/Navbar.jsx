@@ -92,7 +92,7 @@ export default function Navbar({ isDark, setIsDark }) {
             {isDark ? <SunIcon /> : <MoonIcon />}
           </button>
           <a
-            href="/resume.pdf"
+            href="/Pusala-Preetham_Resume.pdf"
             download
             className="btn-primary text-xs px-4 py-2"
           >
