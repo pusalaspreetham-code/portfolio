@@ -4,55 +4,25 @@ const skillCategories = [
   {
     category: "Frontend",
     color: "bg-blue-50 dark:bg-blue-950/30 border-blue-100 dark:border-blue-900/40",
-    skills: [
-      { name: "React", level: 90 },
-      { name: "JavaScript (ES6+)", level: 88 },
-      { name: "TypeScript", level: 72 },
-      { name: "Tailwind CSS", level: 85 },
-      { name: "HTML / CSS", level: 92 },
-      { name: "Next.js", level: 70 },
-    ],
+    skills: ["React", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "HTML / CSS", "Next.js"],
   },
   {
     category: "Backend",
     color: "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-100 dark:border-emerald-900/40",
-    skills: [
-      { name: "Node.js", level: 82 },
-      { name: "Express.js", level: 80 },
-      { name: "Python", level: 78 },
-      { name: "MongoDB", level: 75 },
-      { name: "PostgreSQL", level: 68 },
-      { name: "REST APIs", level: 85 },
-    ],
+    skills: ["Node.js", "Express.js", "Python", "MongoDB", "PostgreSQL", "REST APIs"],
   },
   {
     category: "Tools & Other",
     color: "bg-amber-50 dark:bg-amber-950/30 border-amber-100 dark:border-amber-900/40",
-    skills: [
-      { name: "Git & GitHub", level: 88 },
-      { name: "Docker", level: 60 },
-      { name: "C++", level: 82 },
-      { name: "Linux", level: 72 },
-      { name: "Figma", level: 65 },
-      { name: "AWS (S3, EC2)", level: 58 },
-    ],
+    skills: ["Git & GitHub", "Docker", "C++", "Linux", "Figma", "AWS (S3, EC2)"],
   },
 ];
 
-function SkillBar({ name, level }) {
+function SkillTag({ name }) {
   return (
-    <div className="mb-4">
-      <div className="flex justify-between items-center mb-1.5">
-        <span className="font-body text-sm font-medium text-ink-700 dark:text-cream-100">{name}</span>
-        <span className="font-mono text-xs text-ink-400 dark:text-ink-500">{level}%</span>
-      </div>
-      <div className="h-1.5 bg-cream-200 dark:bg-ink-700 rounded-full overflow-hidden">
-        <div
-          className="h-full bg-ink-700 dark:bg-cream-200 rounded-full transition-all duration-700"
-          style={{ width: `${level}%` }}
-        />
-      </div>
-    </div>
+    <span className="inline-block font-body text-sm font-medium text-ink-700 dark:text-cream-100 bg-cream-100 dark:bg-ink-800 border border-cream-200 dark:border-ink-600 rounded-full px-3.5 py-1.5 mr-2 mb-2">
+      {name}
+    </span>
   );
 }
 
@@ -76,9 +46,11 @@ export default function Skills() {
             <h3 className="font-display text-xl font-semibold text-ink-900 dark:text-cream-50 mb-6">
               {cat.category}
             </h3>
-            {cat.skills.map((skill) => (
-              <SkillBar key={skill.name} {...skill} />
-            ))}
+            <div className="flex flex-wrap">
+              {cat.skills.map((skill) => (
+                <SkillTag key={skill} name={skill} />
+              ))}
+            </div>
           </div>
         ))}
       </div>
