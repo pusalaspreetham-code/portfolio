@@ -4,6 +4,11 @@ A modern personal portfolio website built using React and Tailwind CSS to showca
 
 ---
 
+## 🌐 Live Demo
+👉 https://preethampusala-portfolio.vercel.app/
+
+---
+
 ## 📌 Features
 
 * Projects section with live demo & GitHub links
