@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 1,
+    id: 3,
     title: "AI-Based Dropout Prediction System",
     description:
       "A machine learning project that predicts student dropout risk based on academic and behavioral data. Built a simple interface to input student details and display predictions.",
@@ -13,14 +13,14 @@ export const projects = [
       "Express",
     ],
     github:
-      "https://github.com/pusalaspreetham-code/student-dropout-system.git",
+      "https://github.com/pusalaspreetham-code/student-dropout-system",
     demo: null,
     image: null,
     featured: true,
   },
 
   {
-    id: 2,
+    id: 5,
     title: "Virtual Cookbook",
     description:
       "A web application that allows users to browse, search, and save recipes. Includes category filtering and a clean user interface for easy navigation.",
@@ -40,7 +40,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Sports Tournament Management System",
     description:
       "A system to manage sports tournaments including team registration, match scheduling, and result tracking. Designed to simplify tournament organization.",
@@ -60,7 +60,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 1,
     title: "Electricity Consumption Prediction",
     description:
       "A machine learning system that forecasts household electricity consumption using historical smart meter data, time-based patterns, and weather conditions. Developed and compared XGBoost, LightGBM, and CatBoost models for 1-hour, 1-day, and 1-month forecasting.",
@@ -72,14 +72,13 @@ export const projects = [
       "LightGBM",
       "CatBoost",
     ],
-    github: null,
+    github: "https://github.com/pusalaspreetham-code/Multi-Horizon-Electricity-Forecasting-System",
     demo: null,
     image: null,
-    featured: true,
   },
 
   {
-    id: 5,
+    id: 2,
     title: "CivicSolve AI",
     description:
       "An AI-powered civic problem-solving platform designed to help identify, analyze, and manage citizen-reported issues. Uses AI to process civic information and provide structured insights for better problem resolution.",
@@ -91,9 +90,8 @@ export const projects = [
       "AI",
       "MongoDB",
     ],
-    github: null,
+    github: "https://github.com/pusalaspreetham-code/CivicSolve-AI",
     demo: null,
     image: null,
-    featured: true,
   },
 ];
