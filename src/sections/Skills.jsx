@@ -2,25 +2,54 @@ import Section from "../components/SectionWrapper";
 
 const skillCategories = [
   {
-    category: "Launguages",
-    color: "bg-blue-50 dark:bg-blue-950/30 border-blue-100 dark:border-blue-900/40",
-    skills: ["Python", "JavaScript", "C","C++", "SQL","java"],
+    category: "Languages",
+    color:
+      "bg-blue-50 dark:bg-blue-950/30 border-blue-100 dark:border-blue-900/40",
+    skills: ["Python", "JavaScript", "C", "SQL"],
   },
   {
-    category: "Web Development",
-    color: "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-100 dark:border-emerald-900/40",
-    skills: ["Node.js", "Express.js", "Python","HTML", "CSS", "REST APIs"],
+    category: "Frontend & Backend",
+    color:
+      "bg-emerald-50 dark:bg-emerald-950/30 border-emerald-100 dark:border-emerald-900/40",
+    skills: [
+      "React",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "Express.js",
+      "Flask",
+      "FastAPI",
+      "REST APIs",
+    ],
   },
   {
-    category: "Tools & Other",
-    color: "bg-amber-50 dark:bg-amber-950/30 border-amber-100 dark:border-amber-900/40",
-    skills: ["Git & GitHub", "PostgreSQL","MYSQL","MongoDB","llms"],
+    category: "Databases & Tools",
+    color:
+      "bg-amber-50 dark:bg-amber-950/30 border-amber-100 dark:border-amber-900/40",
+    skills: [
+      "PostgreSQL",
+      "pgvector",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "Git",
+      "GitHub",
+    ],
   },
   {
-    category:" Machine Learning & AI",
-    color: "bg-purple-50 dark:bg-purple-950/30 border-purple-100 dark:border-purple-900/40",
-    skills: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib","TensorFlow","Keras","Natural Language Processing (NLP)","llms experimentation"],
-  }
+    category: "Machine Learning & AI",
+    color:
+      "bg-purple-50 dark:bg-purple-950/30 border-purple-100 dark:border-purple-900/40",
+    skills: [
+      "Scikit-learn",
+      "XGBoost",
+      "LightGBM",
+      "CatBoost",
+      "Sentence Transformers",
+      "Ollama",
+    ],
+  },
 ];
 
 function SkillTag({ name }) {
@@ -33,16 +62,22 @@ function SkillTag({ name }) {
 
 export default function Skills() {
   return (
-    <Section id="skills" className="border-t border-cream-200 dark:border-ink-700">
+    <Section
+      id="skills"
+      className="border-t border-cream-200 dark:border-ink-700"
+    >
       <p className="font-mono text-sm text-ink-400 dark:text-ink-500 mb-3 tracking-widest uppercase">
         02 / Skills
       </p>
+
       <h2 className="section-heading">What I work with</h2>
+
       <p className="section-subheading">
-        Technologies I use to build products from idea to deployment.
+        Technologies I use across machine learning, full-stack development,
+        and backend systems.
       </p>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         {skillCategories.map((cat) => (
           <div
             key={cat.category}
@@ -51,6 +86,7 @@ export default function Skills() {
             <h3 className="font-display text-xl font-semibold text-ink-900 dark:text-cream-50 mb-6">
               {cat.category}
             </h3>
+
             <div className="flex flex-wrap">
               {cat.skills.map((skill) => (
                 <SkillTag key={skill} name={skill} />
