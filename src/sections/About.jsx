@@ -74,12 +74,12 @@ export default function About() {
 
           {/* Stats (REALISTIC) */}
           <div className="absolute -bottom-4 -left-4 bg-white dark:bg-ink-800 border border-cream-200 dark:border-ink-600 rounded-xl px-4 py-3 shadow-lg">
-            <p className="font-display text-2xl font-bold text-ink-900 dark:text-cream-50">1</p>
+            <p className="font-display text-2xl font-bold text-ink-900 dark:text-cream-50">3+</p>
             <p className="text-xs text-ink-500 dark:text-cream-200 font-body">Hackathon participated</p>
           </div>
 
           <div className="absolute -top-4 -right-4 bg-white dark:bg-ink-800 border border-cream-200 dark:border-ink-600 rounded-xl px-4 py-3 shadow-lg">
-            <p className="font-display text-2xl font-bold text-ink-900 dark:text-cream-50">3</p>
+            <p className="font-display text-2xl font-bold text-ink-900 dark:text-cream-50">10+</p>
             <p className="text-xs text-ink-500 dark:text-cream-200 font-body">Projects built</p>
           </div>
         </div>

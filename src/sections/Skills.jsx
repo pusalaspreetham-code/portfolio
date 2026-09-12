@@ -4,7 +4,7 @@ const skillCategories = [
   {
     category: "Launguages",
     color: "bg-blue-50 dark:bg-blue-950/30 border-blue-100 dark:border-blue-900/40",
-    skills: ["Python", "JavaScript", "C","C++", "SQL"],
+    skills: ["Python", "JavaScript", "C","C++", "SQL","java"],
   },
   {
     category: "Web Development",
@@ -14,8 +14,13 @@ const skillCategories = [
   {
     category: "Tools & Other",
     color: "bg-amber-50 dark:bg-amber-950/30 border-amber-100 dark:border-amber-900/40",
-    skills: ["Git & GitHub", "PostgreSQL","MYSQL","MongoDB"],
+    skills: ["Git & GitHub", "PostgreSQL","MYSQL","MongoDB","llms"],
   },
+  {
+    category:" Machine Learning & AI",
+    color: "bg-purple-50 dark:bg-purple-950/30 border-purple-100 dark:border-purple-900/40",
+    skills: ["Scikit-learn", "Pandas", "NumPy", "Matplotlib","TensorFlow","Keras","Natural Language Processing (NLP)","llms experimentation"],
+  }
 ];
 
 function SkillTag({ name }) {
