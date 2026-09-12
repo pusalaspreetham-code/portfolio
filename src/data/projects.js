@@ -16,7 +16,6 @@ export const projects = [
       "https://github.com/pusalaspreetham-code/student-dropout-system",
     demo: null,
     image: null,
-    featured: true,
   },
 
   {
@@ -36,7 +35,6 @@ export const projects = [
       "https://github.com/pusalaspreetham-code/virtual-cookbook",
     demo: null,
     image: null,
-    featured: true,
   },
 
   {
@@ -56,7 +54,6 @@ export const projects = [
       "https://github.com/pusalaspreetham-code/sports-tournament-management",
     demo: null,
     image: null,
-    featured: false,
   },
 
   {
